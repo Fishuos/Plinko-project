@@ -6,9 +6,9 @@ PhysicsMaterial2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Physics Material 2D
+  m_Name: hEavy
   serializedVersion: 2
   friction: 200
-  bounciness: 0.49
+  bounciness: 0.1
   m_FrictionCombine: 3
   m_BounceCombine: 3

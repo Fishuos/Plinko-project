@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -1717210826503888787}
   - component: {fileID: -1671619582710091690}
   m_Layer: 0
-  m_Name: disc
+  m_Name: Bouncy Disc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 4619055403610971774}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3598, y: 2.3936, z: 0}
-  m_LocalScale: {x: 0.61495495, y: 0.62162185, z: 0.69447196}
+  m_LocalPosition: {x: -0.4051, y: 2.3493, z: 0}
+  m_LocalScale: {x: 0.5244336, y: 0.5329786, z: 0.69447196}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -102,7 +102,7 @@ CircleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: de9e9e51cbe51fe4485065e9763839c8, type: 2}
+  m_Material: {fileID: 6200000, guid: 31a82395434493247abe3113ed43c909, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

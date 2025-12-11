@@ -1,12 +1,13 @@
 using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.Scripting.APIUpdating;
+using UnityEngine.EventSystems;
+
 
 public class Player : MonoBehaviour
 {
     public float speed = 1;
-    public GameObject disc;
-    public CameraFollow cameraFollow;
+    public GameObject selectedDisc; 
     private GameObject activeDisc;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -25,21 +26,36 @@ public class Player : MonoBehaviour
      }
 
     void DropDisc()
-    {       
+    {
 
-        if (Input.GetButtonDown("Fire1") && activeDisc == null)
+       
+        //drops ball if avaialble
+        if (Input.GetKeyDown(KeyCode.Space) && activeDisc == null && selectedDisc != null)
         {
-            Vector3 position = transform.position;
-            Quaternion rotation = transform.rotation;
-            activeDisc = Instantiate(disc, position, rotation);
-
-                
+            activeDisc = Instantiate(selectedDisc, transform.position, transform.rotation);
         }
-        
+
+    }
+    
+    // indicates which ball is spawning
+    public void SelectNormalDisc(GameObject normalPrefab)
+    {
+        selectedDisc = normalPrefab;
+    }
+
+    public void SelectHeavyDisc(GameObject heavyPrefab)
+    {
+        selectedDisc = heavyPrefab;
+    }
+
+    public void SelectBouncyDisc(GameObject bouncyPrefab)
+    {
+        selectedDisc = bouncyPrefab;
     }
 
     void Move()
     {
+        //moves the triangle, indicating where the ball will spawn
         float movementX = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
         Vector3 offset = new Vector3(movementX, 0, 0);
         transform.position += offset;
