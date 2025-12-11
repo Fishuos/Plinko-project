@@ -11,11 +11,7 @@ public class Player : MonoBehaviour
     private GameObject activeDisc;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        Move();
-        DropDisc();
-    }
+   
 
     // Update is called once per frame
     void Update()
