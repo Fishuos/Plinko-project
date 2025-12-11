@@ -7541,7 +7541,7 @@ Transform:
   m_GameObject: {fileID: 1215280093}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.28, y: -3.7759714, z: 0}
+  m_LocalPosition: {x: 0.33, y: -3.7759714, z: 0}
   m_LocalScale: {x: 0.6, y: 1.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8783,7 +8783,7 @@ Transform:
   m_GameObject: {fileID: 1525421072}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.287088, y: -0.20074248, z: 0}
+  m_LocalPosition: {x: 8.39, y: -0.20074248, z: 0}
   m_LocalScale: {x: 0.30474618, y: 0.30474618, z: 0.30474618}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9152,7 +9152,7 @@ Transform:
   m_GameObject: {fileID: 1600503337}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.4427886, y: 0.11065751, z: 0}
+  m_LocalPosition: {x: 6.72, y: 0.11065751, z: 0}
   m_LocalScale: {x: 0.30474618, y: 0.30474618, z: 0.30474618}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10334,7 +10334,7 @@ MonoBehaviour:
   scoreKeeper: {fileID: 341943992}
   points: 0
   useMultiplier: 1
-  multiplier: 5
+  multiplier: 2
   useDivider: 0
   Divider: 1
 --- !u!61 &1836455779
@@ -10909,7 +10909,7 @@ MonoBehaviour:
   scoreKeeper: {fileID: 341943992}
   points: 0
   useMultiplier: 1
-  multiplier: 5
+  multiplier: 2
   useDivider: 0
   Divider: 1
 --- !u!61 &2036016246

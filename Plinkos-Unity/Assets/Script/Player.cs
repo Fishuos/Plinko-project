@@ -6,7 +6,14 @@ using UnityEngine.EventSystems;
 
 public class Player : MonoBehaviour
 {
-    public float speed = 1;
+    public float speed = 5;
+    public float leftBoundry = -8f;
+    public float rightBoundry = 8f;
+
+    private int direction = 1;
+
+
+
     public GameObject selectedDisc; 
     private GameObject activeDisc;
     
@@ -16,6 +23,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      
+
 
         Move();
         DropDisc();
@@ -51,10 +60,12 @@ public class Player : MonoBehaviour
 
     void Move()
     {
-        //moves the triangle, indicating where the ball will spawn
-        float movementX = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
-        Vector3 offset = new Vector3(movementX, 0, 0);
-        transform.position += offset;
+        transform.position += Vector3.right * speed * direction * Time.deltaTime;
+
+        if (transform.position.x >= rightBoundry)
+            direction = -1;
+        else if (transform.position.x <= leftBoundry)
+            direction = 1;
     }
 
 
