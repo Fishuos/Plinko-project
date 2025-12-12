@@ -15,21 +15,24 @@ public class ScoreTrigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
        
-
+        //allows triggers to be multipliers
         if (useMultiplier)
         {
             points = Mathf.RoundToInt(scoreKeeper.Score * multiplier * scoreKeeper.increaser);
         }
-       
+     
+        /* unused dividing 
         if (useDivider)
         {
             points = Mathf.RoundToInt(scoreKeeper.Score / Divider * scoreKeeper.increaser);
         }
-        
+        */
+
+      //adds score
         scoreKeeper.AddScore(points);
 
 
-
+        //destroys ball on collision
         Destroy(collider.gameObject);
     }
 }

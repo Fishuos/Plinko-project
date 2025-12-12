@@ -58,6 +58,8 @@ public class Player : MonoBehaviour
         selectedDisc = bouncyPrefab;
     }
 
+
+    //makes player move back and forth
     void Move()
     {
         transform.position += Vector3.right * speed * direction * Time.deltaTime;
